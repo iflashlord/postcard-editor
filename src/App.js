@@ -425,7 +425,7 @@ class App extends Component {
               
               <a className="navbar-brand brand" href="/"> 
               <FontAwesomeIcon icon={faStickyNote} />
-              Postcard Editor <sup>Beta</sup></a> {this.props.selectedItemData.type}
+              Postcard Editor <sup>Beta</sup></a>
             </nav>
           </Col>
           <Col>          
