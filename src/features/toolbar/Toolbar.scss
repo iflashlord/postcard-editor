@@ -1,0 +1,150 @@
+@import "../../App.scss";
+.toolbar-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    z-index: 100;
+    border-left: 1px solid $lightBorderColor;
+    min-height: 46px;
+    background-color: #fff;
+    justify-content: space-between;
+    .separator {
+        margin-right: 15px;
+    }
+    .left-bar,
+    .right-bar {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .toolbar-label {
+        color: $darkLightBlueColor;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .left-bar {
+        .toolbar-icon {
+            margin-right: 10px;
+            color: $priamryColor;
+        }
+        .font-family-container {
+            width: auto;
+            margin-right: 35px;
+            color: $darkLightBlueColor;
+            >div {
+                position: relative;
+            }
+            #font-picker {
+                .dropdown-button {
+                    background: white;
+                }
+                >ul {
+                    background: white;
+                }
+            }
+        }
+        .font-size-container {
+            position: relative;
+            display: flex;
+            cursor: pointer;
+            margin-right: 35px;
+            select {
+                cursor: pointer;
+                background-color: white;
+                color: $darkLightBlueColor;
+                font-size: 16px;
+                font-weight: 600;
+                border: 0;
+                margin: 0;
+                padding-right: 10px;
+                text-indent: 0.01px;
+                text-overflow: '';
+            }
+        }
+        .font-color-container {
+            width: auto;
+            height: 28px;
+            border: 2px solid #ECECEC;
+            border-radius: 4px;
+            padding: 0 5px;
+            cursor: pointer;
+            margin-right: 35px;
+            .text-color-picker {
+                float: left;
+                width: 24px;
+                height: 16px !important;
+                margin-top: 4px;
+                height: 100%;
+                background-color: #000;
+                border-radius: 2px;
+            }
+        }
+        .font-style-container,
+        .font-align-container {
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+            >div {
+                margin-right: 25px;
+                cursor: pointer;
+                &:hover,
+                &:active {
+                    color: $priamryColor;
+                }
+            }
+            .toolbar-icon {
+                width: 12px;
+                height: 15px;
+            }
+        }
+        .layer-container,
+        .group-container,
+        .flip-container {
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+            >div {
+                margin-right: 25px;
+                cursor: pointer;
+                &:hover,
+                &:active {
+                    color: $priamryColor;
+                }
+            }
+            .overlapArrow {
+                width: 15px;
+                cursor: pointer;
+            }
+            i {
+                font-size: 13px;
+            }
+        }
+    }
+    .right-bar {
+        display: flex;
+        align-items: center;
+        .btn-duplicate {
+            margin-right: 20px;
+            cursor: pointer;
+            color: #244eab;
+            &:hover,
+            &:active {
+                color: #132a5c;
+            }
+        }
+        .btn-delete {
+            cursor: pointer;
+            color: #8f1a1a;
+            &:hover,
+            &:active {
+                color: #530f0f;
+            }
+        }
+    }
+}

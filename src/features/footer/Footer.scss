@@ -1,0 +1,135 @@
+@import "../../App.scss";
+.footer {
+    border-left: 1px solid #ececec;
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    background-color: #fff;
+    text-align: center;
+    padding: 0 14px;
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        .mid-view {
+            display: flex;
+            align-items: center;
+            .btn-action {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+            }
+            .selected {
+                background: #7a0a91;
+                padding: 6px;
+                color: #fff;
+            }
+            .divider {
+                float: left;
+                border: 1px solid #E7E7E7;
+                height: 23px;
+                width: 1px;
+                margin: 0 14px;
+            }
+        }
+        .left-view {
+            min-width: 160px;
+            display: flex;
+            align-items: center;
+            .btn-action {
+                display: flex;
+                align-items: center;
+            }
+            .undoicon {
+                color: $lightGreyColor;
+                cursor: pointer;
+            }
+            .redoicon {
+                color: $lightGreyColor;
+                cursor: pointer;
+            }
+            .first {
+                margin: 0 6px;
+            }
+            .second {
+                color: $darkBlueColor;
+                font-size: 14px;
+                line-height: 15px;
+            }
+            .divider {
+                float: left;
+                border: 1px solid #E7E7E7;
+                height: 23px;
+                width: 1px;
+                margin: 0 14px;
+            }
+        }
+        .canvassize {
+            color: $darkBlueColor;
+            text-align: center;
+        }
+        .right-view {
+            display: flex;
+            align-items: center;
+            .plus,
+            .rotate,
+            .minus {
+                font-size: 18px;
+                line-height: 26px;
+                color: $darkBlueColor;
+                font-weight: bold;
+                margin: 0 10px;
+                cursor: pointer;
+            }
+            .select-container {
+                position: relative;
+                select {
+                    width: 63px;
+                    height: 26px;
+                    border: 2px solid #494949;
+                    border-radius: 3px;
+                    text-transform: uppercase;
+                    outline: none;
+                    padding-left: 10px;
+                    transition: 0.2s;
+                    text-align: center;
+                    font-weight: bold;
+                    background: #f2f2f2;
+                    -webkit-appearance: none;
+                    appearance: none;
+                    background: #FFF;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: #313963;
+                }
+                select:focus,
+                select:hover {
+                    box-shadow: 3px 3px 10px #eee
+                }
+                select:-moz-focusring {
+                    color: transparent;
+                    text-shadow: 0 0 0 #000;
+                }
+                select::-ms-expand {
+                    display: none;
+                }
+                .select-arrow {
+                    color: #666;
+                    right: 10px;
+                    top: 8px;
+                    font-size: 12px;
+                    position: absolute;
+                    display: block;
+                    z-index: 10;
+                    margin: 0 0 0 0;
+                    pointer-events: none;
+                }
+            }
+        }
+    }
+    .nav-item {
+        width: 115px;
+    }
+}
